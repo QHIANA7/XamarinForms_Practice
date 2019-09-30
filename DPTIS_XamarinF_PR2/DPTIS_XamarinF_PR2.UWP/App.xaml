@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="DPTIS_XamarinF_PR2.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DPTIS_XamarinF_PR2.UWP"
+    RequestedTheme="Light">
+
+</Application>

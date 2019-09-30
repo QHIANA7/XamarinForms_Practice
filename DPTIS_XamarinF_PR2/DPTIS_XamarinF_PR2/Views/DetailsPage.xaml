@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:DPTIS_XamarinF_PR2.Models"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.DetailsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Tool"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="itemsListView"
+                      ItemsSource="{Binding Items}"
+                      VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True"
+                      ItemSelected="OnItemSelected">
+                <d:ListView.ItemsSource>
+                    <x:Array Type="{x:Type models:PracticeItem}">
+                        <models:PracticeItem>
+                            <models:PracticeItem.Title>
+                                <x:String>페이지 연습</x:String>
+                            </models:PracticeItem.Title>
+                            <models:PracticeItem.Description>
+                                <x:String>Master-Detail, Navigation 등등</x:String>
+                            </models:PracticeItem.Description>
+                            <models:PracticeItem.Date>
+                                <x:String>2019/09/30</x:String>
+                            </models:PracticeItem.Date>
+                        </models:PracticeItem>
+                        <models:PracticeItem>
+                            <models:PracticeItem.Title>
+                                <x:String>레이아웃 연습</x:String>
+                            </models:PracticeItem.Title>
+                            <models:PracticeItem.Description>
+                                <x:String>StackLayout, Grid 등</x:String>
+                            </models:PracticeItem.Description>
+                            <models:PracticeItem.Date>
+                                <x:String>2019/09/30</x:String>
+                            </models:PracticeItem.Date>
+                        </models:PracticeItem>
+                    </x:Array>
+                </d:ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Title}" 
+                                d:Text="{Binding Title}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+                                <Label Text="{Binding Description}" 
+                                d:Text="{Binding Description}"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+                                <Label Text="{Binding Date}" 
+                                d:Text="{Binding Date}"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
