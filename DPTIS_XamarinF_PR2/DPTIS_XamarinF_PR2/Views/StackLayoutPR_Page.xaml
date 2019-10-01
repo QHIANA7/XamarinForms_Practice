@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.StackLayoutPR_Page"
+             Title="StackLayout">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="StackLayout"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <StackLayout Spacing="0"
+                     VerticalOptions="FillAndExpand"
+                     Margin="10">
+                <Label Text="StackLayout"
+                   HorizontalOptions="Start" />
+
+                <Label Text="스택의 자식은"
+                   HorizontalOptions="Center" />
+
+                <Label Text="기본적으로"
+                   HorizontalOptions="End" />
+
+                <Label Text="수직으로 정렬되며,"
+                   HorizontalOptions="Center" />
+
+                <Label Text="HorizontalOptions 속성에 의해"
+                   HorizontalOptions="Start" />
+
+                <Label Text="수평으로"
+                   HorizontalOptions="Center" />
+
+                <Label Text="정렬시킬 수 있습니다."
+                   HorizontalOptions="End" />
+
+                <Label Text="Expand 옵션은 하나 이상의 자식이 크기가 조정 된 후 StackLayout의 남은 영역을 부모의 높이까지 공간을 차지하는 것을 허용합니다."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="End" />
+
+                <StackLayout Spacing="0" Orientation="Horizontal">
+
+                    <Label Text="스택은 " />
+                    <Label Text="수평으로"
+                       HorizontalOptions="CenterAndExpand" />
+                    <Label Text="정렬될 수 있습니다." />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

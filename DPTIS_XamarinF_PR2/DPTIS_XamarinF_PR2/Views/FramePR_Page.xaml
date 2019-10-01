@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.FramePR_Page"
+             Title="Frame">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Frame"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <Frame OutlineColor="Accent"
+               HasShadow="True"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+                <Label Text="저는 Frame에 쌓인 Label 컨트롤 입니다!" />
+            </Frame>
+            <Label Text="HasShadow 속성 동작은 플랫폼에 따라 다릅니다. 기본값은 모든 플랫폼에서 true지만 UWP에서 DropShadow는 렌더링 되지 않습니다" FontSize="Large"/>
+            <Label Text=" 그림자는 Android 및 iOS에서 렌더링 되지만 iOS의 그림자는 더 어둡고 더 많은 공간을 차지합니다." FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

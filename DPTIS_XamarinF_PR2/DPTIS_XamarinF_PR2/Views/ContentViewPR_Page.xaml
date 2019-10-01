@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.ContentViewPR_Page"
+             Title="ContentView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ContentView"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <ContentView BackgroundColor="Aqua"
+                     Margin="10"
+                     Padding="25"
+                     HorizontalOptions="Fill"
+                     VerticalOptions="CenterAndExpand">
+                <Label Text="이번 예제에서 아쿠아 색칠된 The ContentView는 하나의 자식(여기서는 Label)만을 가질 수 있고 다른 자식은 포함하지 않기 때문에 유용하지 않을 수 있습니다. ContentView는 대체로 자체 Padding 속성을 통해 배경색을 제공하거나 자식에게 여백을 줄 수 있는 방법을 제공합니다."
+                       TextColor="Purple" />
+            </ContentView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
