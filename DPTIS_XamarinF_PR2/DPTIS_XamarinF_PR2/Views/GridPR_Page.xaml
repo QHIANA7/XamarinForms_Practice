@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.GridPR_Page"
+             Title="Grid">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand"
+          Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Grid"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"
+               Grid.Row="0"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <Label Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Grid.Row="1"
+                   Text="뷰를 행과 열로 정렬하는 레이아웃입니다. 각 행과 열에는 가변/절대 크기를 설정할 수 있습니다.
+                   &#10;Grid는 기존 표처럼 데이터를 나타내기 위한 레이아웃이 아니며 표와 혼동해선 안됩니다. Grid에는 셀 서식 개념이 없고 HTML 표와 달리 컨텐츠만을 표시하는 용도만 가능합니다."/>
+
+
+            <Label Text="크기가 자동설정된 셀"
+               Grid.Column="0"
+               Grid.Row="2"
+               TextColor="White"
+               BackgroundColor="Blue" />
+
+            <BoxView Color="Silver"
+                 Grid.Column="1"
+                 Grid.Row="2"
+                 HeightRequest="0" />
+
+            <BoxView Color="Teal"
+                 Grid.Column="0"
+                 Grid.Row="3" />
+
+            <Label Text="남는공간"
+               Grid.Column="1"
+               Grid.Row="3"
+               TextColor="Purple"
+               BackgroundColor="Aqua"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+
+            <Label Text="행 2칸 확장"
+               Grid.Column="2"
+               Grid.Row="2"
+               Grid.RowSpan="2"
+               TextColor="Yellow"
+               BackgroundColor="Navy"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+
+            <Label Text="열 2칸 확장"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Grid.Row="4"
+               TextColor="Blue"
+               BackgroundColor="Yellow"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+
+            <Label Text="100x100&#10;고정크기"
+               Grid.Column="2"
+               Grid.Row="4"
+               TextColor="Aqua"
+               BackgroundColor="Red"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

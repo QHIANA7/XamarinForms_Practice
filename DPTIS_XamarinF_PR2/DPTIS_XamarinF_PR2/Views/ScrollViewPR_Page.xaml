@@ -16,26 +16,13 @@
             <ScrollView VerticalOptions="FillAndExpand" Margin="10">
                 <Label Text=
 "페이지 내용이 페이지에 딱 맞을 수 있습니다. 그 땐 매우 편리합니다. 하지만 대부분의 경우에 페이지의 내용이 페이지에 비해 너무 크거나 런타임에서만 사용 가능합니다.
-&#10;&#10;이러한 경우, ScrollView가 해결책을 제공합니다. Simply set its
-Content property to your content &#x2014; in this
-case a Label but in the general case very
-likely a Layout derivative with multiple
-children &#x2014; and the ScrollView provides
-scrolling with the distinctive look and touch
-familiar to the user.
-&#10;&#10;The ScrollView is also capable of
-horizontal scrolling, and while that's
-usually not as common as vertical scrolling,
-sometimes it comes in handy.
-&#10;&#10;Most often, the content of a ScrollView is
-a StackLayout. Whenever you're using a
-StackLayout with a number of items determined
-only at runtime, you should probably put it in
-a ScrollView just to be sure your stuff doesn't
-go running off the bottom of the screen."
-
+&#10;&#10;이러한 경우, ScrollView가 해결책을 제공합니다. 이 경우에는 Content 속성을 &#x2014; (이 Label)같은 콘텐츠로 설정하면되지만 일반적으로 여러 자식이 포함된
+Layout 파생 개체입니다. ScrollView는 사용자에게 친숙한 독특한 모양과 터치로 스크롤링을 제공합니다.
+&#10;&#10; ScrollView는 가로 스크롤도 가능하며 일반적으로 세로 스크롤만큼 잘 쓰이진 않지만 때로는 유용할 때가 있습니다.
+&#10;&#10; 보통 ScrollView의 내용은 StackLayout입니다. 런타임 시 여러 컨트롤을 가진 StackLayout을 사용할 때 마다, 컨트롤이 화면 하단에서 잘릴 수 있기 때문에 아마 ScrollView를 써야할 것입니다."
                 FontSize="Large"/>
             </ScrollView>
+            <Label Text="ScrollView는 서로 중첩될 수 없습니다. 또한 ScrollView는 ListView나 WebView와 같이 스크롤을 제공하는 다른 컨트롤과 중첩되어선 안됩니다."/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
