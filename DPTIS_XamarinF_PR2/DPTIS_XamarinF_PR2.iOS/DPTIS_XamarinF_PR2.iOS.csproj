@@ -116,6 +116,7 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="OpenTK-1.0" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -134,4 +135,5 @@
       <Name>DPTIS_XamarinF_PR2</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\DPTIS_XamarinF_PR2.Shared\DPTIS_XamarinF_PR2.Views.Shared.projitems" Label="Shared" />
 </Project>

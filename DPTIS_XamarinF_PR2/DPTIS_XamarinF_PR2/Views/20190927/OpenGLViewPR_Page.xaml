@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.OpenGLViewPR_Page"
+             Title="OpenGLView">
+    <ContentPage.Content>
+        <!--
+        OpenGLView is only supported in iOS and Android projects.
+            To enable it, add a new Reference in the iOS and Android 
+            projects to a Framework assembly. In the list, select
+            openTK-1.0 (for iOS) and OpenTK 1.0.0.0 (for Android).
+    -->
+
+        <StackLayout>
+            <Label Text="OpenGLView"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <Label Text="OpenGLView는 안드로이드 및 iOS 프로젝트에서 OpenGL 그래픽을 표시합니다. 다만, UWP는 지원하지 않습니다. iOS와 안드로이드 프로젝트에 OpenTK-1.0 어셈블리 또는 1.0.0.0 버전의 OpenTK 어셈블리가 요구됩니다. OpenGLView는 공유 프로젝트에서 사용하기 쉬우며, .NET Standard 라이브러리를 사용하는 경우 종속 서비스가 필요할 수 있습니다."/>
+
+            <Label Text="이는 Xamarin.Forms에 기본 제공되는 유일 그래픽 기능이지만 Xamarin.Forms 응용 프로그램은 SkiaSharp, UrhoSharp를 사용하여 그래픽을 랜더링할 수 있습니다."/>            
+            
+            <OpenGLView x:Name="openGLView"
+                    VerticalOptions="FillAndExpand" />
+
+            <Label x:Name="regretsLabel"
+               Text="Sorry, OpenGLView cannot be used on this device!"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"
+               Margin="10, 0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

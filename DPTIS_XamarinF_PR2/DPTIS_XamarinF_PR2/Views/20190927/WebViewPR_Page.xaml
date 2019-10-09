@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.WebViewPR_Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="WebView"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+            <Label Text="WebView는 UriWebViewSource 또는 HtmlWebViewSource 개체로 설정되어 있는지에 따라서 웹 페이지나 HTML 콘텐츠를 표시합니다."/>
+
+            <WebView Source="https://www.xamarin.com"
+                 VerticalOptions="FillAndExpand" />
+            
+            <Label Text="Windows의 WebView는 해당 플랫폼의 Internet Explorer에서 지원 되더라도 Silverlight, Flash 또는 ActiveX 컨트롤을 지원하지 않습니다."/>
+            <Label Text="응용 프로그램이 안전하지 않은 웹 사이트에 연결해야하는 경우 NSAllowsArbitraryLoads를 사용하여 ATS를 완전히 해제하는 대신 항상 NSExceptionDomains를 사용하여 예외로 도메인을 입력해야합니다. NSAllowsArbitraryLoads는 극한의 긴급 상황에서만 사용해야합니다."/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

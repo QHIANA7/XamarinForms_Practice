@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.ImagePR_Page"
+             Title="Image">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Image"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <Label Text="Image는 비트맵을 표시합니다. 비트맵은 웹을 통해 다운로드 받을 수 있고, 공통/플랫폼 프로젝트에 포함되거나 .NET Stream 개체를 이용하여 생성된 리소스로 포함할 수 있습니다."/>
+            <Label Text="이미지는 응용 프로그램 탐색, 유용성 및 브랜딩의 중요한 부분입니다."/>
+            <Label Text="Xamarin.Forms 응용 프로그램은 모든 플랫폼에서 이미지를 공유할 필요가 있지만 각 플랫폼마다 다른 이미지를 표시할 때도 있습니다.
+                   아이콘/스플래시 화면에는 플랫폼에 특정한 이미지가 요구됩니다."/>
+            
+
+            <Image Source="https://aka.ms/campus.jpg"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+
+            <Label Text="모든 플랫폼에서 동일한 이미지 파일 이름을 사용하려면 모든 플랫폼에서 이름이 유효해야합니다. Android drawable에는 소문자, 숫자, 밑줄 및 마침표만 이름지정이 가능하며 플랫폼 간 호환성을 위해 다른 모든 플랫폼에서도이 이름을 따라야합니다. 예제 파일명 waterfront.png는 규칙을 따르지만 잘못된 파일명의 예로는 water front.png, WaterFront.png, water-front.png및 wåterfront.png가 있습니다."/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

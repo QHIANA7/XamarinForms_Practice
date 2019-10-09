@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.ViewPR_Page"
+             Title="뷰 컨트롤 실습"
+             Padding="10,0">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="뷰 컨트롤 실습"
+               FontSize="40"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+            <Label Text="View는 흔히 그래픽 프로그래밍 환경에서의 위젯 또는 컨트롤을 말합니다."/>
+
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="프레젠테이션 뷰" HorizontalOptions="Center"/>
+                <Button Text="Label"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="LabelPR_Page"
+                    Clicked="OnButtonClicked"/>
+                
+                <Button Text="Image"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="ImagePR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Button Text="BoxView"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="BoxViewPR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Button Text="WebView"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="WebViewPR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Button Text="OpenGLView"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="OpenGLViewPR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Label Text="이 아래부터는 여러개의 컨트롤을 담을 수 있는 Layout입니다."/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

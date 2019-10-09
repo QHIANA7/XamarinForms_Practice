@@ -11,7 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPTIS_XamarinF_PR2.iOS", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DPTIS_XamarinF_PR2", "DPTIS_XamarinF_PR2\DPTIS_XamarinF_PR2\DPTIS_XamarinF_PR2.csproj", "{FEBBE1DA-5395-481D-BB68-F7C771BD9268}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DPTIS_XamarinF_PR2.Shared", "DPTIS_XamarinF_PR2\DPTIS_XamarinF_PR2.Shared\DPTIS_XamarinF_PR2.Shared.shproj", "{859B82A6-1816-421B-8150-2F4D6519CD11}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DPTIS_XamarinF_PR2\DPTIS_XamarinF_PR2.Shared\DPTIS_XamarinF_PR2.Views.Shared.projitems*{127d2790-4fa3-498c-86fc-69ee396bbc15}*SharedItemsImports = 4
+		DPTIS_XamarinF_PR2\DPTIS_XamarinF_PR2.Shared\DPTIS_XamarinF_PR2.Views.Shared.projitems*{859b82a6-1816-421b-8150-2f4d6519cd11}*SharedItemsImports = 13
+		DPTIS_XamarinF_PR2\DPTIS_XamarinF_PR2.Shared\DPTIS_XamarinF_PR2.Views.Shared.projitems*{b25950cc-3013-45cc-8998-f2d0cb306096}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -179,7 +186,7 @@ Global
 		SolutionGuid = {5964BA32-5E29-4AA2-B53C-8F05388B3DB8}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
+		SccNumberOfProjects = 7
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://qhiana7.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -195,5 +202,12 @@ Global
 		SccProjectUniqueName4 = DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2.csproj
 		SccProjectName4 = DPTIS_XamarinF_PR2/DPTIS_XamarinF_PR2
 		SccLocalPath4 = DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2
+		SccProjectUniqueName5 = DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2.Shared\\DPTIS_XamarinF_PR2.Shared.shproj
+		SccProjectName5 = DPTIS_XamarinF_PR2/DPTIS_XamarinF_PR2.Shared
+		SccLocalPath5 = DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2.Shared
+		SccProjectUniqueName6 = DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2.Shared\\DPTIS_XamarinF_PR2.Views.Shared.projitems
+		SccProjectTopLevelParentUniqueName6 = DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2.Shared\\DPTIS_XamarinF_PR2.Shared.shproj
+		SccProjectName6 = DPTIS_XamarinF_PR2/DPTIS_XamarinF_PR2.Shared
+		SccLocalPath6 = DPTIS_XamarinF_PR2\\DPTIS_XamarinF_PR2.Shared
 	EndGlobalSection
 EndGlobal

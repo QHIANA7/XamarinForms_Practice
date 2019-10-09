@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.BoxViewPR_Page"
+             Title="BoxView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BoxView"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <Label Text="BoxView는 Color 속성에 의해 색이 지정된 단색 사각형을 표시합니다. BoxView는 기본적으로 40x40 크기를 갖습니다. HeightRequest속성과 WidthRequest 속성으로 크기를 조절할 수 있습니다."/>
+
+            <BoxView Color="Accent"
+                 WidthRequest="150"
+                 HeightRequest="150"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Xamarin.Froms에는 벡터 그래픽 시스템이 내장되어있지 않기 때문에 BoxView가 보정에 도움이 될 것입니다."/>
+            <Label Text="BoxView는 특정 너비와 두께의 선과 비슷하게 크기를 조정할 수 있으며 임의의 각도로 회전할 수 있습니다."/>
+            <Label Text="BoxView는 간단한 그래픽을 모방할 수 있지만 Xamarin.Forms의 SkiaSharp를 사용하여 보다 더 정교한 그래픽 요구사항을 충족할 수 있습니다."/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

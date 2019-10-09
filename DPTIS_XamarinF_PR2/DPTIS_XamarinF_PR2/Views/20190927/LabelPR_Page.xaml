@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.LabelPR_Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Label"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+            <Label Text="Label은 상수나 변수를 한줄 또는 여러줄에 텍스트 블록을 표시합니다.
+                   Text 속성에 상수 문자열을 설정하거나 FormattedText 속성에 변수 서식을 위한 FormattedString 개체를 설정하여 사용합니다."/>
+            <Label Text="문자 장식은 Span에도 적용할 수 있습니다."/>
+            
+            <Label Text=
+"Xamarin.Forms는 개발자가 Android, iOS, UWP에 공용으로 사용가능한 사용자 인터페이스를 쉽게 생성할 수 있는
+UI툴킷 추상화를 네이티브 단에서 지원하도록 허용하는 크로스 플랫폼입니다"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               Margin="10, 0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
