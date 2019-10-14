@@ -90,14 +90,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DPTIS_XamarinF_PR2\DPTIS_XamarinF_PR2.csproj">
       <Project>{16B5A890-E7E1-4BA4-AF96-7331C8781113}</Project>
       <Name>DPTIS_XamarinF_PR2</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\XamarinLogo.png" />
   </ItemGroup>
   <Import Project="..\DPTIS_XamarinF_PR2.Shared\DPTIS_XamarinF_PR2.Views.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

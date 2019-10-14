@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.MapPR_Page"
+             Title="Map">
+    <!-- 
+        Map requires:
+            - Installing the Xamarin.Forms.Maps NuGet package
+                (Use the same version number as the Xamarin.Forms package)
+            - a platform-specific call to Xamarin.FormsMaps.Init() in:
+                - iOS: AppDelegate.cs
+                - Android: MainActivity.cs
+                - UWP: App.xaml.cs (with API key)
+            - platform-specific permission:
+                - iOS: location request in info.plist
+                - Android: API key in Android.Manifest.xml, plus location permissions
+                - UWP: package.appxmanifest Capabilities: Location
+    -->
+
+    <StackLayout>
+        <Label Text="Map"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <Label Text="Map은 각 플랫폼에서 기본 지도API를 사용하여 지도를 표시합니다. Xamarin.Forms.Maps Nuget 패키지가 설치되어 있어야 합니다. 안드로이드와 UWP는 지도 인증 키가 요구됩니다."/>
+        <Label Text="이번예제는 Maps SDK for Android API를 사용하여 안드로이드에서만 지도를 표시합니다."/>
+
+        <maps:Map>
+            <x:Arguments>
+                <maps:MapSpan>
+                    <x:Arguments>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>37.79762</x:Double>
+                                <x:Double>-122.40181</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+
+                        <x:Double>
+                            0.01
+                        </x:Double>
+
+                        <x:Double>
+                            0.01
+                        </x:Double>
+                    </x:Arguments>
+                </maps:MapSpan>
+            </x:Arguments>
+
+            <maps:Map.Pins>
+                <maps:Pin Label="Xamarin">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>37.79762</x:Double>
+                                <x:Double>-122.40181</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+            </maps:Map.Pins>
+        </maps:Map>
+    </StackLayout>
+</ContentPage>

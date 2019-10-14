@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views.ImageButtonPR_Page">
+    <StackLayout>
+        <Label Text="ImageButton"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="ImageButton은 이미지를 표시하며 누르면 Clicked 이벤트를 발생시키는 사각형 개체입니다."/>
+        <Label Text="Button 뷰는 Button에 이미지를 표시할 수 있는 Image속성을 정의하지만, 이 속성은 Button 문자 옆에 작은 아이콘을 표시할 때 사용하므로 이미지를 클릭하는 버튼을 사용하기 위해서는 ImageButton을 사용해야합니다."/>
+
+        <ImageButton Source="XamarinLogo.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnImageButtonClicked" />
+
+        <Label x:Name="label"
+               Text="0 ImageButton clicks"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+</ContentPage>

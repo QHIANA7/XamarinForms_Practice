@@ -48,7 +48,39 @@
                     StyleId="OpenGLViewPR_Page"
                     Clicked="OnButtonClicked"/>
 
-                <Label Text="이 아래부터는 여러개의 컨트롤을 담을 수 있는 Layout입니다."/>
+                <Button Text="Map"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="MapPR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Label Text="명령 뷰" HorizontalOptions="Center"/>
+                <Button Text="Button"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="ButtonPR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Button Text="ImageButton"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="ImageButtonPR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Button Text="SearchBar"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="SearchBarPR_Page"
+                    Clicked="OnButtonClicked"/>
+
+                <Label Text="값 설정 뷰" HorizontalOptions="Center"/>
+                
+                <Button Text="CheckBox"
+                    Font="Large"
+                    BorderWidth="1" 
+                    StyleId="CheckBoxPR_Page"
+                    Clicked="OnButtonClicked"/>
+                
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

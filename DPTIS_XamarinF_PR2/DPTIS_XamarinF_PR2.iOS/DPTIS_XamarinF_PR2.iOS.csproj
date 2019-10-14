@@ -135,5 +135,8 @@
       <Name>DPTIS_XamarinF_PR2</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\XamarinLogo.png" />
+  </ItemGroup>
   <Import Project="..\DPTIS_XamarinF_PR2.Shared\DPTIS_XamarinF_PR2.Views.Shared.projitems" Label="Shared" />
 </Project>
