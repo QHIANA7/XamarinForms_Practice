@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DPTIS_XamarinF_PR2.Views._20190927.SliderPR_Page"
+             Title="Slider"
+             Padding="10,0">
+    <StackLayout>
+        <Label Text="Slider"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="연속 값 범위에서 선택할 때는 슬라이더를 사용하십시오. Xamarin.Forms Slider는 사용자가 연속 범위에서 Double형 값을 선택하기 위해 조작할 수 있는 가로형 막대입니다."/>
+
+        <Label Text="Minimum의 기본값은 0.0, Maximum의 기본값은 1.0입니다."/>
+        <Label Text="Value속성은 Minimum과 Maximum 사이의 값이며 기본값은 0.0입니다."/>
+        
+        
+        
+        <Slider x:Name="slider"
+                 Minimum="0"
+                 Maximum="100"
+                 VerticalOptions="CenterAndExpand" />
+
+        <Label Text="{Binding Source={x:Reference slider},
+                              Path=Value,
+                              StringFormat='Slider value is {0:F1}'}"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Label Text="내부적으로 Slider는 최소값이 최대값보다 작도록해야 합니다. 최소값이 최대값보다 작지 않도록 최소값 또는 최대값을 설정하면 예외가 발생합니다."/>
+        <Label Text="예를들면 Maximum의 기본값은 1.0 입니다. Slider생성 시 Minimum을 먼저 1.0 초과하여 초기화하는 경우 예외가 발생합니다."/>
+    </StackLayout>
+</ContentPage>
